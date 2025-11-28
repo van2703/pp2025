@@ -77,12 +77,10 @@ def main():
     m = number_of_courses()
     courses(m)
     while True:
-        print("1. List students")
-        print("2. List courses")
-        print("3. Input marks for a course")
-        print("4. Show student marks for a course")
-        print("0. Exit")
-
+        print("1. list students")
+        print("2. list courses")
+        print("3. enter marks for a course")
+        print("4. show student marks for a course")
         choice = input("Choose an option: ")
 
         if choice == "1":
@@ -93,8 +91,5 @@ def main():
             marks()
         elif choice == "4":
             student_marks()
-        elif choice == "0":
-            print("Goodbye!")
-            break
         else:
             print("Invalid option. Try again.")
